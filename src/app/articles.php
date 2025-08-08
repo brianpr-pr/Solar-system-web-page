@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <header>
+            <h1>Articles</h1>
+        </header>
+        <main></main>
+        <footer></footer>
+    </body>
+</html>
