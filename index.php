@@ -6,7 +6,6 @@
 
 		<link rel="stylesheet" href="./public/style/index.css">
 
-    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
     <script type="importmap">
       {
         "imports": {
@@ -34,7 +33,7 @@
     </div>
 
     <div id="progress-container">
-      <div id="progress">Engaging Hyperdrive...</div>
+      <div id="progress">Loading planet</div>
     </div>
 
     <div id="button">
