@@ -2,6 +2,9 @@
 <html lang="en">
 	<head>
 		<title>Solar System</title>
+
+		<link rel="stylesheet" href="./public/style/index.css"></link>
+
 	</head>
   
 	<body id="body">
