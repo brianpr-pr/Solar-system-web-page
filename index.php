@@ -38,8 +38,8 @@
     </div>
 
     <div id="button">
-      <img id="left" src="./public/media/rotate-left.png">
-      <img id="right" src="./public/media/rotate-right.png">
+      <img id="left" src="./public/media/rotate-left.png"/>
+      <img id="right" src="./public/media/rotate-right.png"/>
     </div>
     
 		<script type="module" src="./src/features/index/main.js"></script>
