@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Solar System</title>
-
-		<link rel="stylesheet" href="./public/style/index.css">
-
-	</head>
+	<head></head>
   
 	<body id="body">
     <header id="header">
