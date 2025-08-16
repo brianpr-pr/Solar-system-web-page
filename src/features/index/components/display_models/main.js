@@ -32,8 +32,6 @@ controls.noZoom = true;
 controls.target = new THREE.Vector3(0, 1, 0);
 controls.update();
 
-
-
 //Spotlight
 const spotLight = new THREE.SpotLight(0xffffff, 30000, 100, 0.22, 1);
 spotLight.position.set(0, 75, 0);
@@ -42,12 +40,12 @@ spotLight.shadow.bias = -0.0001;
 scene.add(spotLight);
 
 //Paths
-const mars= './public/models/mars/';
+const mars = './public/models/mars/';
 const earth = './public/models/earth/';
 
 //Call to function
 let mesh;
-loadPlanet(mars);
+loadPlanet(earth);
 
 //Event to resize
 window.addEventListener('resize', () => {
@@ -95,4 +93,3 @@ function animate() {
   controls.update();
   renderer.render(scene, camera);
 }
-

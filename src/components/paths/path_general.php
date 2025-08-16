@@ -56,12 +56,11 @@ $src = "./src";
     $app = "$src/app";
 
     //Inside app
-        $appAboutme = "$app/about_me.php";
         $appArticles = "$app/articles.php";
 
     //Components folder
     $components = "$src/components";
-
+    
     //Data folder
     $data = "$src/data";
     
@@ -69,5 +68,5 @@ $src = "./src";
         $script = "$data/script.sql";
 
     //Features folder
-    $features = "$src/features";
+    $features = "$src/features"; 
 ##END RESOURCES FOLDER

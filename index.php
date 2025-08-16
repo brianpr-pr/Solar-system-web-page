@@ -18,6 +18,8 @@
 	</head>
   
 	<body id="body">
+    <?php include "./src/features/index/path/path_index.php"?>
+    <?php include $planetsSliderGetData?>
     <header id="header">
       <div id="heading">
         <h2 class="h2-heading"><a class="a-heading" href="">Home</a></h2>
@@ -28,7 +30,10 @@
       </div>
       <div class="border"></div>
     </header>
-    
+    <div id="container-header-planet">
+      <h2><a><?php echo $planetName;?></a></h2>
+    </div>
+
     <div id="scene">
       <canvas id="canvas"></canvas>
     </div>
@@ -42,7 +47,6 @@
       <img id="right" src="./public/media/rotate-right.png"/>
     </div>
 
-    
-		<script type="module" src="./src/features/index/main.js"></script>
+		<script type="module" src="./src/features/index/components/display_models/main.js"></script>
 	</body>
 </html>

@@ -29,10 +29,9 @@ body {
 }
 
 .border {
-  background: linear-gradient(190deg, gray, 90%, black);
+  background: linear-gradient(190deg, gray, 100%, black);
   height: 2px;
   width: 95%;
-  margin-top: 1px auto 22px auto;
 }
 
 
