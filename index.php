@@ -6,14 +6,6 @@
 
 		<link rel="stylesheet" href="./public/style/index.css">
 
-    <script type="importmap">
-      {
-        "imports": {
-          "three": "https://unpkg.com/three@v0.163.0/build/three.module.js",
-          "three/addons/": "https://unpkg.com/three@v0.163.0/examples/jsm/"
-        }
-      }
-    </script>
 	</head>
   
 	<body id="body">
