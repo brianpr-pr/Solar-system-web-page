@@ -3,7 +3,7 @@
 	<head>
 		<title>Solar System</title>
 
-		<link rel="stylesheet" href="./public/style/index.css"></link>
+		<link rel="stylesheet" href="./public/style/index.css"/>
 
 	</head>
   
