@@ -3,29 +3,39 @@ body {
   background-size:cover;
   margin: 0;
   font-family: 'SF Distant Galaxy';
+  width: 100%;
 }
 
-#heading {
-  position: fixed;
-  width: 100%;
-  padding: 32px;
-  letter-spacing: 4px;
-  margin-bottom: 33px;
+
+#header{
+  display:flex;
+  flex-direction: column;
+
+  #heading {
+    width: 100%;
+    padding: 32px;
+    letter-spacing: 4px;
+    margin-bottom: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    a {
+      text-decoration: none;
+      color: white;
+      letter-spacing: 5px;
+    }
+  }
 }
 
 .border {
-  background: linear-gradient(90deg, gray, 90%, black);
+  background: linear-gradient(190deg, gray, 90%, black);
   height: 2px;
-  width: 80vw;
-  margin-top: 4px;
+  width: 95%;
+  margin-top: 1px auto 22px auto;
 }
 
-h1 {
-  color: rgb(215, 215, 215);
-  font-size: 4em;
-  margin: 0px;
-  font-weight: 100;
-}
+
 
 #progress-container {
   position: fixed;
@@ -42,13 +52,11 @@ h1 {
 }
 
 #scene{
-  
   display: flex;
   justify-content: center;
   flex-direction: row;
   align-items: center;
   align-content: center;
-  margin-top: 50px  
 }
 
 #button{
@@ -61,4 +69,10 @@ h1 {
   * { 
     margin-left: 12px;
   }
+}
+
+#canvas{
+  border:2px solid white;
+  margin-top: 150pt;
+  width: 100%;
 }
