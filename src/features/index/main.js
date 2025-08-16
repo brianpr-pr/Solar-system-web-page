@@ -17,31 +17,22 @@ const scene = new THREE.Scene();
 
 //Camera
 const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 1000);
-camera.position.set(4, 5, 11);
+camera.position.set(0.15, 1, 1);
 
 //Orbit controls
 const controls = new OrbitControls(camera, renderer.domElement);
-controls.enableDamping = true;
+controls.enableDamping = false;
 controls.enablePan = false;
 controls.minDistance = 5;
-controls.maxDistance = 50000;
+controls.maxDistance = 0;
 controls.minPolarAngle = 0.5;
 controls.maxPolarAngle = 1.5;
 controls.autoRotate = false;
+controls.noZoom = true;
 controls.target = new THREE.Vector3(0, 1, 0);
 controls.update();
 
-//Base geometry object
-const groundGeometry = new THREE.PlaneGeometry(20, 20, 32, 32);
-groundGeometry.rotateX(-Math.PI / 2);
-const groundMaterial = new THREE.MeshStandardMaterial({
-  color: 0x555555,
-  side: THREE.DoubleSide
-});
-const groundMesh = new THREE.Mesh(groundGeometry, groundMaterial);
-groundMesh.castShadow = false;
-groundMesh.receiveShadow = false;
-scene.add(groundMesh);
+
 
 //Spotlight
 const spotLight = new THREE.SpotLight(0xffffff, 30000, 100, 0.22, 1);
@@ -55,6 +46,7 @@ const mars= './public/models/mars/';
 const earth = './public/models/earth/';
 
 //Call to function
+let mesh;
 loadPlanet(mars);
 
 //Event to resize
@@ -85,9 +77,9 @@ const loader = new GLTFLoader().setPath(path);
 loader.load('scene.gltf', (gltf) => {
   console.log(gltf);
   console.log('loading model');
-  let mesh = gltf.scene;
+  mesh = gltf.scene;
 
-  mesh.position.set(0, 3.05, -1);
+  mesh.position.set(0, 1, -1);
   scene.add(mesh);
 
   document.getElementById('progress-container').style.display = 'none';
@@ -103,3 +95,4 @@ function animate() {
   controls.update();
   renderer.render(scene, camera);
 }
+
