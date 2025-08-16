@@ -1,0 +1,49 @@
+The document "path_general.php" will be used to
+storage variables that will contain the path
+of all folder and files that could be accesed from any part of the web app.
+
+The style guidelines of this file to keep consistency among present and future developers
+that may work on this project:
+
+1º All of the folder that are located in the root directory will have as a way of declaring
+that all of the folders and files that come after this anuncement are located inside of this
+parent folder the text:
+    ##START NAME FOLDER
+And at the end of it this text:
+    ##END NAME FOLDER
+
+2º Inside of it for each folder located there will be as a declaration this line of text:
+    //NAME_FOLDER folder
+Followed by a variable that will storage the path.
+
+3º After the declaration of the folder name and the variable that will storage the path, for each folder we will have as a way of anuncing that these are the contents of the folder the line of text:
+    //Inside NAME_FOLDER
+after this line there will be a tabulation for all of the text that will hold the information of wich files and folder are located inside of the parent folder.
+
+4ºEach //Anouncement will be separated by a new line.
+The ##START and ##END will not have a line separation to make it easier to diferenciate.
+
+Example of the guidelines if applied correctly.
+
+##START SRC FOLDER
+//Src folder
+$src = "./src";
+
+//Inside src
+
+    //App folder
+    $app = "$src/app";
+
+    //Inside app
+        $appAboutme = "$app/about_me.php";
+        $appArticles = "$app/articles.php";
+
+    //Components folder
+    $components = "$src/components";
+
+    //Data folder
+    $data = "$src/data";
+
+    //Features folder
+    $features = "$src/features";
+##END RESOURCES FOLDER
