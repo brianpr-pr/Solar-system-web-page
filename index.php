@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<meta charset="utf-8"/>
 		<title>Solar System</title>
 
 		<link rel="stylesheet" href="./public/style/index.css"/>
 
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@v0.163.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@v0.163.0/examples/jsm/"
+        }
+      }
+    </script>
 	</head>
   
 	<body id="body">
@@ -24,7 +34,7 @@
     </div>
 
     <div id="progress-container">
-      <div id="progress">Loading planet</div>
+      <div id="progress">Loading</div>
     </div>
 
     <div id="button">
