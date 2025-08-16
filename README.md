@@ -1,0 +1,1 @@
+A personal project that combines my fascination with astrophysics and my technical skills in coding.
